@@ -40,7 +40,8 @@
           </ul>
           <a href="#" class="header__menu-btn">
             <div class="header__auth">
-              <span class="icon-users"></span>Войти
+              <span class="icon-users"></span>
+              <span style="height: 20px">Войти</span>
             </div>
           </a>
         </div>
@@ -57,9 +58,24 @@
                 <input
                   type="text"
                   placeholder="Искать на Биоват"
-                  class="input_search" />
+                  class="input_search"
+                />
                 <button class="input_search_button" type="submit">
-                  Search
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g id="Search">
+                      <path
+                        id="â³ Icon Color"
+                        d="M9.85809 2C14.198 2 17.7162 5.51711 17.7162 9.85568C17.7162 11.6387 17.122 13.2829 16.1208 14.6013L21.6866 20.1718C22.1048 20.5904 22.1044 21.2686 21.6857 21.6867C21.267 22.1048 20.5885 22.1044 20.1703 21.6858L14.6052 16.1165C13.2864 17.1174 11.6416 17.7114 9.85809 17.7114C5.51819 17.7114 2 14.1942 2 9.85568C2 5.51711 5.51819 2 9.85809 2ZM9.85809 4.14234C6.70181 4.14234 4.14309 6.70027 4.14309 9.85568C4.14309 13.0111 6.70181 15.569 9.85809 15.569C13.0144 15.569 15.5731 13.0111 15.5731 9.85568C15.5731 6.70027 13.0144 4.14234 9.85809 4.14234Z"
+                        fill="#257F41"
+                      />
+                    </g>
+                  </svg>
                 </button>
               </form>
               <div class="header__panel_search_submenu">
@@ -118,11 +134,7 @@
             </li>
             <li class="header__nav-item">
               <div class="header__nav-item_text">
-                <span
-                  class="header__nav-item_title"
-                  style="display: flex; width: 178px"
-                  >Тепло и шумоизоляция</span
-                >
+                <span class="header__nav-item_title">Тепло и шумоизоляция</span>
               </div>
             </li>
             <li class="header__nav-item">
@@ -155,40 +167,72 @@
       </div>
       <hr class="divider" />
     </header>
+
     <main>
       <div class="body_wrapper">
-        <div class="production">
-          <div class="production__content">
-            <h2 class="production__content-title">
-              Производство и продажа строительных материалов
-            </h2>
-            <span class="production__content-text"
-              >Правильно подобранные и расположенные элементы освещения влияют
-              на атмосферу и настроение помещения, а также придают последнему
-              неповторимый индивидуальный характер. Вопрос освещения занимает
-              важное место в мире дизайна.</span
-            >
-            <ul class="production__content-pagination">
-              <li class="production__content-page"><a href="#"></a></li>
-              <li class="production__content-page"><a href="#"></a></li>
-              <li class="production__content-page _active"><a href="#"></a></li>
-              <li class="production__content-page"><a href="#"></a></li>
-              <li class="production__content-page"><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="production__photo">
-            <div class="production__photo-bck"></div>
-            <img
-              src="img/production_1.png"
-              class="production__photo-img"
-              alt="Производство biovat" />
-            <div class="production__photo-play">
-              <div class="ellipse_1"></div>
-              <div class="ellipse_2"></div>
-              <div class="ellipse_3"></div>
-              <img src="img/play.svg" alt="" class="production__photo_button" />
+        <div class="wrapper">
+          <section class="production">
+            <div class="production__content">
+              <h1 class="production__content-title">
+                Производство и продажа строительных материалов
+              </h1>
+              <span class="production__content-text"
+                >Правильно подобранные и расположенные элементы освещения влияют
+                на атмосферу и настроение помещения, а также придают последнему
+                неповторимый индивидуальный характер. Вопрос освещения занимает
+                важное место в мире дизайна.</span
+              >
+              <ul class="production__content-pagination">
+                <li class="production__content-page"><a href="#"></a></li>
+                <li class="production__content-page"><a href="#"></a></li>
+                <li class="production__content-page _active">
+                  <a href="#"></a>
+                </li>
+                <li class="production__content-page"><a href="#"></a></li>
+                <li class="production__content-page"><a href="#"></a></li>
+              </ul>
             </div>
-          </div>
+            <div class="production__photo">
+              <div class="production__photo-bck"></div>
+              <img
+                src="img/production_1.png"
+                class="production__photo-img"
+                alt="Производство biovat"
+              />
+              <div class="production__photo-play">
+                <div class="ellipse_1"></div>
+                <div class="ellipse_2"></div>
+                <div class="ellipse_3"></div>
+                <img
+                  src="img/play.svg"
+                  alt=""
+                  class="production__photo_button"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="about_company">
+            <div class="about_company__title">О компании biovat</div>
+            <div class="about_company__text">
+              Компания решила не останавливаться на достигнутом. В 2013 году к
+              услугам нашей компании будут добавлены следующие виды работ:
+              гидроизоляция напылением полимочевины и полиуретановыми мастиками;
+              нанесение жидкой теплоизоляции на трубы холодного и горячего
+              водоснабжения; покрасочные работы с использованием распылительных
+              установок. К лету 2013 года будет открыта первая очередь
+              собственного производства жидкой резины и модифицированной
+              битумной эмульсии для дорожных работ в городе Красноярске.
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  src="img/arrow_1.svg"
+                  alt="arrow"
+                  class="about_company__arrow"
+              /></a>
+            </div>
+          </section>
         </div>
       </div>
     </main>
