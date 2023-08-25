@@ -363,6 +363,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(335px, auto));
   justify-content: center;
+  height: 510px;
 }
 
 .goods_item {
