@@ -362,9 +362,10 @@ a {
   font-weight: 500;
   line-height: 20px;
   color: var(--black);
+  transition: 0.3s ease;
 }
 
-.button__link_text:hover {
+.button__link:hover .button__link_text {
   color: var(--orange);
 }
 
@@ -693,13 +694,12 @@ a:hover {
   height: 60px;
 }
 
-.arrow_link:hover svg line {
-  stroke: var(--orange);
+.arrow_link svg line {
   transition: 0.3s ease;
 }
 
-.arrow_link:hover #Line_2 {
-  transition: 0.3s ease;
+.arrow_link:hover svg line {
+  stroke: var(--orange);
 }
 
 .goods_top_nav-content {
