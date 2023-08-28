@@ -340,6 +340,7 @@ a {
 
 .button__link {
   border: 1px solid var(--light-grey-2);
+  transition: 0.3s ease;
 }
 
 .button__link a {
@@ -365,12 +366,10 @@ a {
 
 .button__link_text:hover {
   color: var(--orange);
-  transition: 0.3s ease;
 }
 
 .button__link:hover .button__link_arrow path {
   stroke: var(--orange);
-  transition: 0.3s ease;
 }
 
 .goods_content {
