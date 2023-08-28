@@ -264,7 +264,15 @@ a {
 
 .arrow_left:hover .button__link_arrow path,
 .arrow_right:hover .button__link_arrow path {
-  stroke: var(--orange);
+  stroke: var(--light-green);
+}
+
+.arrow_left:hover,
+.arrow_right:hover {
+  border: 1px solid var(--light-grey);
+}
+
+.button__link_arrow path {
   transition: 0.3s ease;
 }
 
@@ -277,6 +285,7 @@ a {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .goods__tabs {
@@ -297,22 +306,25 @@ a {
 .goods__tab:first-child {
   background: var(--main-green);
   border: 1px solid var(--main-green);
+  transition: 0.3s ease;
 }
 
 .goods__tab:not(:first-child) {
-  border-top: 1px solid var(--light-grey-2);
-  border-right: 1px solid var(--light-grey-2);
-  border-bottom: 1px solid var(--light-grey-2);
+  border: 1px solid var(--light-grey-2);
+  margin: -1px -0.5px;
+  transition: 0.3s ease;
+}
+
+.goods__tab:not(:first-child):hover {
+  border: 1px solid var(--light-grey);
 }
 
 .goods__tab:not(:first-child):hover .goods__tab_text {
   color: var(--light-green);
-  transition: 0.3s ease;
 }
 
 .goods__tab:first-child:hover {
   background: var(--light-green);
-  transition: 0.3s ease;
 }
 
 .goods__tab:first-child a {
@@ -327,6 +339,11 @@ a {
 
 .button__link {
   border: 1px solid var(--light-grey-2);
+}
+
+.button__link a {
+  display: flex;
+  height: 100%;
 }
 
 .button__link:hover {
@@ -366,7 +383,20 @@ a {
   height: 510px;
 }
 
+.goods_items a:not(:first-child) {
+  margin: 0px 0px 0px -1px;
+}
+
+.goods_items a:nth-child(3) {
+  margin-left: -2px;
+}
+
+.goods_items a:nth-child(4) {
+  margin-left: -3px;
+}
+
 .goods_item {
+  position: relative;
   width: 335px;
   display: flex;
   flex-direction: column;
@@ -380,6 +410,9 @@ a {
 .goods_item:hover {
   border: 1px solid var(--light-grey);
   cursor: pointer;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05),
+    0px 30px 30px -15px rgba(0, 0, 0, 0.05);
+  z-index: 2;
 }
 
 .goods_item:hover .goods_item-title {
@@ -481,7 +514,8 @@ a:hover {
 
 .goods_item-button_cart {
   background: var(--main-green);
-  padding: 20px 24px;
+  padding: 16px 24px;
+  max-height: 50px;
   align-items: center;
   color: white;
   border: none;
@@ -490,7 +524,7 @@ a:hover {
   font-size: 14px;
   font-weight: 700;
   line-height: 140%;
-font-family: "Muller", sans-serif;
+  font-family: "Muller", sans-serif;
 }
 
 .goods_item-button_cart:hover {
@@ -503,7 +537,9 @@ font-family: "Muller", sans-serif;
   background: transparent;
   border: 1px solid var(--light-grey-2);
   padding: 13px;
+  max-height: 50px;
   cursor: pointer;
+  margin-left: -0.5px;
 }
 
 .goods_item-button_compare:hover,
@@ -520,12 +556,15 @@ font-family: "Muller", sans-serif;
 }
 
 .add {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
   max-height: 0;
   transition: 0.3s ease;
 }
 
 .goods_item:hover .add {
+  opacity: 1;
   visibility: visible;
   display: flex;
   max-height: 100px;
@@ -548,6 +587,7 @@ font-family: "Muller", sans-serif;
   justify-content: center;
   cursor: pointer;
   transition: 0.3s ease;
+  margin: 0px -0.5px;
 }
 
 .btn_add:hover {
@@ -594,6 +634,8 @@ font-family: "Muller", sans-serif;
 .decisions_item-wrapper:hover {
   border: 1px solid var(--light-grey);
   transition: 0.3s ease;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05),
+    0px 30px 30px -15px rgba(0, 0, 0, 0.05);
 }
 
 .decisions_item:hover .decisions_item-content_title {
@@ -763,6 +805,7 @@ font-family: "Muller", sans-serif;
 
 .numbers__stats_item {
   border: 1px solid var(--light-grey-2);
+  margin: -0.5px;
 }
 
 .numbers__stats_item-content {
@@ -978,6 +1021,10 @@ font-family: "Muller", sans-serif;
   stroke: var(--white);
 }
 
+.documents__link:hover .arrow_link:hover svg line {
+  stroke: var(--orange);
+}
+
 .documents__link-content {
   padding: 63px 36px 64px 36px;
   border: 1px solid var(--light-grey-2);
@@ -1074,6 +1121,7 @@ font-family: "Muller", sans-serif;
   padding: 30px;
   border: 1px solid var(--light-grey-2);
   display: flex;
+  margin: -0.5px;
   flex-direction: column;
   gap: 30px;
 }
@@ -1109,6 +1157,15 @@ font-family: "Muller", sans-serif;
   font-weight: 800;
   line-height: 135%;
   transition: 0.3s ease;
+}
+
+.news_item {
+  transition: 0.3s ease;
+}
+
+.news_item:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05),
+    0px 30px 30px -15px rgba(0, 0, 0, 0.05);
 }
 
 .news_item:hover .news_title {

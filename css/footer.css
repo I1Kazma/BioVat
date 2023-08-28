@@ -74,13 +74,14 @@
 }
 
 .footer__contacts-media {
+  margin: -1px 1px 1px -1px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(107px, auto));
 }
 
 .media_link {
   border: 1px solid var(--light-grey-2);
-
+  margin: -0.5px -0.5px;
   transition: 0.3s ease;
 }
 
