@@ -104,6 +104,10 @@
   font-family: "Muller", sans-serif;
 }
 
+.input_search:focus-visible {
+  outline: none;
+}
+
 .input_search_button {
   display: flex;
   position: relative;
