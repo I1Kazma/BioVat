@@ -695,6 +695,10 @@ a:hover {
   height: 60px;
 }
 
+#arrow_link {
+  width: 150px;
+}
+
 .arrow_link svg line {
   transition: 0.3s ease;
 }
