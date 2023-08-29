@@ -174,16 +174,25 @@ a {
   z-index: 4;
 }
 
-.production__content-pagination {
+.production__content-pagination,
+.production__content-pagination_goods {
   display: flex;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-.production__content-page {
+.production__content-page,
+.production__content-page_goods {
   width: 9px;
   height: 9px;
   background: var(--light-grey-2);
   border-radius: 50%;
+}
+
+.production__content-pagination_goods {
+  display: none;
 }
 
 ._active {
@@ -1233,5 +1242,219 @@ a:hover {
     right: 0;
     width: 100%;
     display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 931px;
+  }
+
+  .production {
+    padding-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(435px, auto));
+    gap: 10px;
+  }
+
+  .production__content {
+    max-width: 451px;
+  }
+
+  .production__content-title {
+    font-size: 30px;
+  }
+
+  .production__content-text {
+    font-size: 16px;
+  }
+
+  .production__photo-bck,
+  .production__photo-img {
+    width: 435px;
+    height: 265px;
+  }
+
+  .production__photo-play {
+    top: 50%;
+    left: 52%;
+  }
+
+  .about_company {
+    max-width: 953px;
+  }
+
+  .section__title {
+    font-size: 30px;
+  }
+
+  .section__text {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  main .wrapper:nth-child(2) {
+    padding-top: 160px !important;
+  }
+
+  main .background_fill_wrapper .wrapper {
+    padding-top: 0px !important;
+  }
+
+  .production__content-pagination_goods {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .decisions_items {
+    gap: 30px;
+    grid-template-columns: repeat(3, 290px);
+    grid-auto-rows: 280px;
+  }
+
+  .decisions_item:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .decisions_item:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .goods_offer {
+    flex-direction: column-reverse;
+    padding-top: 80px;
+    gap: 30px;
+  }
+
+  .goods_offer__card {
+    padding: 25px 30px;
+  }
+
+  .goods_offer__card,
+  .numbers__card {
+    max-width: 930px;
+    flex-direction: row;
+    border: 1px solid var(--light-grey-2);
+    gap: 25px;
+    background: #fff;
+  }
+
+  .fill_wrapper {
+    top: 150px;
+  }
+
+  .conditions {
+    grid-template-columns: repeat(2, 449px);
+    grid-auto-rows: 360px;
+    gap: 31px;
+  }
+
+  .condition_item {
+    flex-direction: column-reverse;
+    padding: 30px;
+    align-items: baseline;
+    position: relative;
+  }
+
+  .condition_item-img {
+    width: 164px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .condition_item-content_title {
+    font-size: 24px;
+  }
+
+  .numbers {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .numbers__card {
+    border: none;
+    width: 100%;
+  }
+
+  .numbers__card-content {
+    max-width: 100%;
+  }
+
+  .numbers__card-content .section__text {
+    width: 100%;
+  }
+
+  .numbers__stats {
+    grid-template-columns: repeat(2, minmax(465px, auto));
+  }
+
+  .goods_offer__card-content {
+    gap: 20px;
+  }
+
+  .video_content {
+    grid-template-columns: 540px 390px;
+  }
+
+  .video:last-child {
+    display: none;
+  }
+
+  .documents {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .documents__links {
+    grid-template-columns: repeat(3, 290px);
+    gap: 30px;
+  }
+
+  .documents__link:nth-child(3) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: auto;
+    grid-row-end: auto;
+  }
+
+  .gallery {
+    padding-top: 150px;
+  }
+
+  .gallery_content {
+    grid-template-columns: 280px 280px 370px;
+    grid-auto-rows: 340px;
+  }
+
+  .gallery_content-img {
+    height: 240px;
+  }
+
+  .gallery_content-img:last-child {
+    height: 85%;
+  }
+
+  .gallery_content-textblock {
+    padding-top: 30px;
+    max-width: 450px;
+  }
+
+  .gallery_content-text {
+    font-size: 16px;
+  }
+
+  .advantage {
+    padding-top: 0px;
+  }
+
+  .news_items {
+    grid-template-columns: repeat(auto-fit, minmax(405px, auto));
   }
 }

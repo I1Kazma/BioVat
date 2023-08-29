@@ -161,3 +161,39 @@
 .copyright_link a {
   color: var(--light-green);
 }
+
+@media (max-width: 992px) {
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  }
+
+  .footer__contacts {
+    flex-direction: row;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .footer__contacts-address {
+    width: 526px;
+  }
+
+  .footer__contacts-media {
+    grid-template-columns: repeat(auto-fit, minmax(156px, auto));
+    width: 59%;
+  }
+
+  .media_link-content {
+    width: auto;
+    height: 100%;
+  }
+
+  .footer_copyright {
+        grid-template-columns: repeat(auto-fit, minmax(97px, auto));
+}
+
+.footer__contacts-address{
+  border: 1px solid var(--light-grey-2);
+}
+  }
+}
