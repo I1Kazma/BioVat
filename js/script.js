@@ -42,3 +42,24 @@ window.onscroll = () => {
   header_menu.classList.remove("open");
   catalog.classList.remove("bx-x");
 };
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".arrow_right",
+    prevEl: ".arrow_left",
+  },
+
+  slidesPerView: 2,
+  loop: true,
+  width: 670,
+});
