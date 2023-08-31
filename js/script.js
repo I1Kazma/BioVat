@@ -40,26 +40,57 @@ menu_close.onclick = () => {
 window.onscroll = () => {
   menu.classList.remove("bx-x");
   header_menu.classList.remove("open");
-  catalog.classList.remove("bx-x");
+  catalog.classList.remove("open");
 };
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
+var swiper_4 = new Swiper(".swiper_4", {
+  slidesPerView: 4,
+  spaceBetween: 0,
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: ".arrow_right",
-    prevEl: ".arrow_left",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+const swiper_2 = new Swiper(".swiper_2", {
   slidesPerView: 2,
+  spaceBetween: 0,
   loop: true,
-  width: 670,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    993: {
+      slidesPerView: 2,
+    },
+    769: {
+      slidesPerView: 3,
+    },
+    577: {
+      slidesPerView: 3,
+    },
+  },
 });
